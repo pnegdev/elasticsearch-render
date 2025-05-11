@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: elasticsearch
+    env: docker
+    plan: starter
+    autoDeploy: false
+    envVars:
+      - key: discovery.type
+        value: single-node
